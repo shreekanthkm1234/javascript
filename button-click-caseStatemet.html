@@ -1,0 +1,31 @@
+<input type="button" value="Click Me"  onmouseup="getValue(event);">
+
+<script>
+
+	function getValue(event){
+	var buttonClicked;
+		if(event.which)
+		{
+			switch(event.which)
+			{
+				case 1:
+				buttonClicked = "left button Clickid";
+				break;
+
+				case 2:
+				buttonClicked = "middel button Clickid";
+				break;
+
+				case 3:
+				buttonClicked = "right button Clickid";
+				break;
+
+				default:
+				buttonClicked = "defualt button Clickid";
+				break;
+			}
+			alert(buttonClicked);
+	     }
+
+	}
+</script>

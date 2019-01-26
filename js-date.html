@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="time"></div>
+	<input type="button" value="start time" onclick="setinterval();">
+	<input type="button" value="stop time" onclick="cleartime();">
+	<script>
+
+		var time;
+		function setinterval()
+	     {
+	     	time = setInterval(setTime,1000);
+	     }
+
+	     function cleartime()
+	     {
+	     	clearInterval(time)
+	     }
+
+	     function setTime()
+	     {
+	     	document.getElementById('time').innerHTML = new Date();
+	     }
+	     setTime();
+	</script>
+</body>
+</html>
